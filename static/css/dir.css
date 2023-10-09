@@ -1,0 +1,53 @@
+@font-face{
+    font-family: 'JetBrainsMono';
+    src: url('//cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono/web/woff2/JetBrainsMono-Medium.woff2') format('woff2'),
+        url('//cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono/web/woff/JetBrainsMono-Medium.woff') format('woff'),
+        url('//cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono/ttf/JetBrainsMono-Medium.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+*{
+    font-family: JetBrainsMono, Monospace, Consolas !important;
+}
+html{
+    height: 100%;
+}
+body,html{
+    padding: 0px;
+    margin: 0px;
+    color: #d9770f;
+    background-color: #111;
+    font-size: 13px;
+    line-height: 155%;
+}
+.header{
+    font-size: 11px;
+    background: #111;
+    border-top: 2px solid #000;
+    max-height: 100px;
+    bottom: 0px;
+    position: absolute;
+    width: 100%;
+    overflow: none;
+}
+.header div{
+    background: #111;
+    height: 100px;
+    overflow:scroll;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+.header p{
+    margin-bottom: -10px;
+}
+.header a{
+    color: #aa7735 !important;
+    border-bottom: 2px dotted #8a693e;
+    text-decoration: none;
+}
+.site-frame{
+    width: 100%;
+    height: 100vh;
+    border: 0px;
+    position:fixed;
+}

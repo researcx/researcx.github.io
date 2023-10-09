@@ -1,0 +1,1117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>researcx - profile</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="./static/css/bootstrap.min.css" rel="stylesheet">
+    <link href="./static/css/style.css" rel="stylesheet">
+    <meta http-equiv="onion-location" content="http://an34x3vzgcye25jpxucr7mhb4bk7d5qkwfe44li377ewqsvsnjd5k3qd.onion" />
+    <link rel="shortcut icon" href="./static/img/favicon.png" />
+
+    <meta name="twitter:card" content="Security Consultant" />
+    <meta name="twitter:site" content="user:researcx" />
+    <meta name="twitter:creator" content="GitHub Pages" />
+
+    <meta property="og:url" content="https://researcx.github.io" />
+    <meta property="og:title" content="user:researcx" />
+    <meta property="og:description" content="Security Consultant" />
+
+    <meta property="og:image" content="https://researcx.github.io/static/img/av.jpg" />
+    <style>
+      .panel-images {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+      .image-gallery-inline{
+        max-width: 95%;
+        min-width: 95%;
+        margin-bottom: -6px;
+        margin-left: 20px;
+      }
+      .image-inline{
+        max-width: 95%;
+        min-width: 95%;
+        margin-bottom: 16px;
+        margin-left: 40px;
+        border: 4px solid #222;
+        opacity: 0.7;
+      }
+      .image-inline:hover{
+        opacity: 1;
+      }
+      a.image-link{
+        border-bottom: 0 none transparent !important;
+      }
+
+      .pfp {
+        background-color: #000;
+        background-image: url("");
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        width: 375px;
+        height: 708px;
+        border: 4px solid #000;
+        display: none;
+        margin: 0 auto;
+      }
+
+      .image {
+        display: block !important;
+        height: auto !important;
+        width: 225px;
+        margin: 0 auto;
+        float: left;
+        text-align: center;
+        border: 0;
+        overflow: visible;
+        padding-top: 10px;
+      }
+
+      .image, .imgbox-full img, .imgbox-full video {
+        height: auto !important;
+        width: 225px;
+        margin: 0 auto;
+      }
+
+      .imgbox-full, .imgbox-full img {
+        display: block !important;
+        visibility: visible !important;
+      }
+
+      .pfplink {
+        display: none !important;
+      }
+
+      .pre {
+        unicode-bidi: embed;
+      }
+
+      .pgpwide {
+        display: block;
+        background-color: #000;
+        color: #e76517 !important;
+        padding: 16px;
+        padding-top: 16px;
+        font-size: 12px;
+        width: 100%;
+        margin: 0 auto;
+      }
+
+      .pgp {
+        display: block;
+        background-color: #000;
+        color: #e76517 !important;
+        padding: 16px;
+        padding-top: 16px;
+        font-size: 10px;
+        width: 416px;
+        margin: 0 auto;
+      }
+
+      .subtext {
+        font-style: italic;
+        text-align: center;
+        font-size: 12px;
+        margin: 0 auto;
+        text-align: center;
+        max-width: 80%;
+        margin-top: -60px;
+        margin-bottom: 40px;
+      }
+
+      .small {
+        font-size: 9px !important;
+      }
+
+      .antipixel {
+        width: 80px;
+        height: 15px;
+        display: inline-block;
+      }
+
+      span.center.antipixel-link a {
+        border-bottom: 0px none #fff !important;
+      }
+
+      .antipixel.linux {
+        background-image: url("./static/img/VPZyqeV.png");
+      }
+
+      .antipixel.opensource {
+        background-image: url("./static/img/zOE81NW.png");
+      }
+
+      .antipixel.hacker {
+        background-image: url("./static/img/eo5dcEs.gif");
+      }
+
+      .antipixel.eff {
+        background-image: url("./static/img/c5JCD7Q.gif");
+      }
+
+      .antipixel.donate {
+        background-image: url("./static/img/sW4DZ8w.gif");
+      }
+
+      .antipixel.thinkpad {
+        background-image: url("./static/img/7yFFrep.png");
+      }
+
+      .antipixel.code {
+        background-image: url("./static/img/g39Klzx.gif");
+      }
+
+      *,
+      .navbar-brand {
+        font-family: JetBrainsMono, 'Courier Prime', Monospace, Consolas !important;
+        color: #000 !important;
+      }
+
+      .list-center {
+        text-align: center;
+        display: block;
+        font-size: 15px;
+      }
+
+      #profile-username::before {
+        content: "Keira Treial (";
+      }
+
+      #profile-username::after {
+        content: ") [0xA2FB6A07] \2666";
+      }
+
+      #search-bar {
+        display: none;
+      }
+
+      #profile-bio,
+      .profile-content,
+      #page-content {
+        word-wrap: break-word;
+      }
+
+      .audio {
+        display: block;
+        float: right;
+        text-align: right;
+        width: 100px;
+      }
+
+      .right {
+        display: block;
+        float: right;
+        text-align: right;
+        font-size: 14px;
+      }
+
+      .center {
+        display: block;
+        text-align: center;
+        width: 100%;
+      }
+
+      .plus0 {
+        font-size: 16px;
+        display: block;
+        margin-top: -20px;
+        padding-bottom: 10px;
+      }
+
+      .plus1 {
+        font-size: 17px;
+      }
+
+      .plus2 {
+        font-size: 19px;
+      }
+
+      .redteam {
+        font-style: italic;
+        text-transform: uppercase;
+        color: #e74919 !important;
+      }
+
+      .alt-text {
+        font-size: 13px;
+        color: #555 !important;
+      }
+
+      .alt-pad-x1 {
+        display: block;
+        padding-left: 8px;
+      }
+
+      .alt-pad-x2 {
+        display: block;
+        padding-left: 16px;
+      }
+
+      .alt-pad-x3 {
+        display: block;
+        padding-left: 42px;
+      }
+
+      .project-header {
+        font-size: 13px;
+      }
+
+      .left-alt,
+      .right-alt, .left-alt-gallery {
+        display: block;
+        font-size: 14px;
+        color: #555 !important;
+      }
+      .right-alt-gallery a {
+        display: block;
+        font-size: 14px;
+        color: #dc7224 !important;
+        float: right;
+        border-bottom: 0px none transparent !important;
+        padding-right: 20px;
+      }
+      .right-alt-gallery a:hover {
+        border-bottom: 1px solid #dc7224 !important;
+      }
+      .left-alt a, .left-alt-gallery a {
+        color: #555 !important;
+      }
+      .left-alt{
+        padding-left: 32px;
+      }
+      .left-alt-gallery{
+        padding-left: 20px;
+      }
+
+      .warning-text {
+        color: red !important;
+      }
+
+      div#page-content.profile-content span.disxlaimer3 a {
+        border-bottom: 0px none #fff;
+      }
+
+      #profile-bio a,
+      .profile-content ul li a,
+      #page-content.profile-content a {
+        text-decoration: none !important;
+        border-bottom: 1px dashed #000;
+      }
+
+      #profile-bio a:hover,
+      .profile-content ul li a:hover,
+      #page-content.profile-content a:hover {
+        border-bottom: 1px dotted #000;
+      }
+
+      .italic {
+        font-style: italic;
+      }
+
+      .disxlaimer {
+        font-weight: bold;
+        font-style: italic;
+        font-size: 14px;
+        display: block;
+        text-align: center;
+        margin-top: -20px;
+        margin-bottom: 20px;
+      }
+
+      .xdisxlaimerx {
+        font-style: italic;
+        font-size: 14px;
+        display: block;
+        margin-top: -20px;
+        margin-bottom: 20px;
+      }
+
+      .disxlaimer2 {
+        font-weight: bold;
+        font-style: italic;
+        font-size: 16px;
+        display: block;
+        text-align: center;
+        margin-top: -50px;
+        margin-bottom: 20px;
+      }
+
+      .disxlaimer3 {
+        font-weight: bold;
+        font-style: italic;
+        font-size: 26px;
+        display: block;
+        text-align: center;
+        margin-top: -50px;
+        margin-bottom: 20px;
+      }
+
+      .disxlaimer4 {
+        font-style: italic;
+        font-size: 14px;
+        display: block;
+        text-align: center;
+        margin-top: -60px;
+        margin-bottom: 20px;
+      }
+
+      .disxlaimer5 {
+        font-style: italic;
+        font-size: 14px;
+        display: block;
+        text-align: center;
+      }
+
+      #tag-sidebar {
+        padding-top: 15px;
+      }
+
+      .tags {
+        font-size: 0px;
+        color: #fff;
+      }
+
+      .profile-content li {
+        list-style-type: none;
+        margin: 0;
+        margin-top: 5px;
+        margin-bottom: 10px;
+        font-size: 16px;
+      }
+
+      div#page-content.profile-content p#profile-bio {
+        margin-bottom: 0px important;
+      }
+
+      ul {
+        margin-left: -25px;
+      }
+
+      @font-face {
+        font-family: 'JetBrainsMono';
+        src: url('https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono/web/woff2/JetBrainsMono-Medium.woff2') format('woff2'), url('https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono/web/woff/JetBrainsMono-Medium.woff') format('woff'), url('https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono/ttf/JetBrainsMono-Medium.ttf') format('truetype');
+        font-weight: 400;
+        font-style: normal;
+      }
+
+      @font-face {
+        font-family: 'Courier Prime';
+        font-style: normal;
+        font-weight: 400;
+        src: url(https://fonts.gstatic.com/s/courierprime/v2/u-450q2lgwslOqpF_6gQ8kELaw9pWt_-.woff2) format('woff2');
+        unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+      }
+
+      @font-face {
+        font-family: 'Courier Prime';
+        font-style: normal;
+        font-weight: 400;
+        src: url(https://fonts.gstatic.com/s/courierprime/v2/u-450q2lgwslOqpF_6gQ8kELawFpWg.woff2) format('woff2');
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+      }
+
+      @media only screen and (max-width: 800px) {
+        #profile-title {
+          display: none !important;
+        }
+
+        .navbar-light .navbar-nav .nav-link {
+          margin-left: 34px;
+        }
+
+        .pgp {
+          font-size: 9px;
+          width: 390px;
+        }
+      }
+
+      span.alt-text.demo-link a {
+        color: lime !important;
+      }
+
+      span.alt-text.images-link a,
+      .images-link a {
+        color: yellow !important;
+      }
+
+      * {
+        color: #aa7735 !important
+      }
+
+      html body div.container-fluid div.inner-container div.row.no-gutters div#page-content div#profile-links p.float-right.view-map a.view-map {
+        color: #d0cc05 !important;
+      }
+
+      html body div.container-fluid div.inner-container div.row.no-gutters div#page-content div#profile-links p.float-right.view-source a.view-source {
+        color: #d0cc05 !important;
+      }
+
+      #page-content.profile-content ul span.alt-pad-x1 li a,
+      #page-content.profile-content ul span.alt-pad-x2 li a,
+      #page-content.profile-content ul span.alt-pad-x3 li a,
+      .project-header a {
+        color: #d9770f !important;
+      }
+
+      div#page-content p#profile-bio a,
+      ul#tag-sidebar li a {
+        color: #555 !important;
+        font-size: 14px;
+      }
+
+      .ctosName,
+      .ctosStatus {
+        color: black !important;
+      }
+
+      body,
+      html {
+        background: #121212;
+      }
+
+      @media only screen and (max-width: 800px) {
+
+        #profile-bio,
+        .profile-content,
+        #page-content {
+          background: transparent !important;
+          border-left: 0px transparent #0f0f0f;
+        }
+      }
+
+      #profile-bio,
+      .profile-content,
+      #page-content {
+        background: #0f0f0f;
+        border-left: 1px solid #0f0f0f;
+      }
+
+      .container-fluid #map,
+      .container-fluid #map2 {
+        border: 1px solid #121010;
+        background: #1e1e1e;
+      }
+
+      #profile-bio a,
+      .profile-content ul li a,
+      #page-content.profile-content a {
+        border-bottom: 1px dashed #606060;
+      }
+
+      html body div.container-fluid div.inner-container div.row.no-gutters div#page-content.profile-content strong,
+      html body div.container-fluid div.inner-container div.row.no-gutters div#sidebar ul#tag-sidebar.profile-sidebar li h6,
+      html body div.container-fluid div.inner-container div.row.no-gutters div#sidebar ul#tag-sidebar.profile-sidebar-options li h6,
+      #profile-username,
+        {
+        color: #dc7224 !important;
+      }
+
+      #sidebar {
+        border-right: 0px none #000;
+      }
+
+      .navbar-brand {
+        display: none;
+      }
+
+      .bg-light {
+        background-image: url(./static/img/fasfsd.png) !important;
+        background-repeat: repeat-y;
+        background-position: right;
+        background-color: #e74919 !important;
+        font-size: 0px;
+        border-bottom: 2px solid black;
+      }
+
+      #sidebar {
+        padding-top: 10px;
+      }
+
+      #profile-username {
+        margin-top: 20px;
+      }
+
+      .navbar-toggler {
+        display: none !important;
+      }
+
+      #avatar-sidebar-ct {
+        background: #121212 !important;
+      }
+
+      .user-avatar {
+        padding: 0px;
+        border: 0px none;
+        -webkit-border-radius: 2px;
+        -moz-border-radius: 2px;
+        border-radius: 2px;
+      }
+
+      #tag-sidebar .count {
+        color: #976a30 !important;
+        display: none !important;
+      }
+
+      #footer {
+        background-image: url(./static/img/fasfsd.png) !important;
+        background-repeat: repeat-y;
+        background-position: left;
+        background-color: #e74919 !important;
+        font-size: 0px;
+        height: 4px;
+        border-top: 2px solid black;
+      }
+
+      .user-qr.large {
+        filter: invert(100);
+      }
+
+      .alt-text-x2,
+      div#page-content.profile-content ul li span.center.alt-text-x2 a {
+        font-size: 16px;
+        color: #555 !important;
+      }
+
+      #page-content {
+        padding-right: 10px;
+      }
+    </style>
+  </head>
+	<body>
+      <nav class="navbar navbar-expand-md navbar-light bg-light">
+			<a class="navbar-brand" href="#">identibooru</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+			      </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mr-auto">
+                </ul>
+                <ul class="navbar-nav">
+                    
+                        <li class="nav-item">
+                            <a class="nav-link" href="#login">log in</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#register">register</a>
+                        </li>
+                    
+                </ul>
+			      </div>
+		</nav>
+		
+		
+		
+		<div class="container-fluid">
+<div class="inner-container">
+  <div id="profile-title">
+    <h1 id="profile-username">researcx</h1>
+  </div>
+  <div class="row no-gutters">
+    <div id="sidebar">
+      
+			
+				<div id="avatar-sidebar-ct">
+					<a href="./static/img/av.jpg?v=1670439606" target="_blank">
+					  <img src="./static/img/av.jpg?v=1670439606" alt="user:researcx" title="user:researcx" class="user-avatar large" style="margin: -3px;">
+					</a>
+					<ul style="display: inline-block;width: auto;">
+					  <li class="ctos ctosName">Keira Treial</li>
+					  <li class="ctos ctosStatus">Fixer</li>
+					  <li class="ctos ctosAge">Age: 31</li>
+					  <li class="ctos ctosOccupation">Occupation: Undisclosed</li>
+					</ul>
+				</div>
+			
+      
+      <ul id="tag-sidebar" class="profile-sidebar">
+        <li><h6>bio</h6></li>
+                                <li class="tag-type-general">
+                                <a href="#age:31">age:31</a> <span class="count">1</span>
+                                </li>
+                                
+                                <li class="tag-type-general">
+                                <a href="#location:United_Kingdom">location:United_Kingdom</a> <span class="count">1</span>
+                                </li>
+                                
+                                <li class="tag-type-general">
+                                <a href="#name:Keira_Treial">name:Keira_Treial</a> <span class="count">1</span>
+                                </li>
+                                
+                                <li class="tag-type-general">
+                                <a href="#occupation:Undisclosed">occupation:Undisclosed</a> <span class="count">1</span>
+                                </li>
+                                
+                                <li class="tag-type-general">
+                                <a href="#pronouns:she_her">pronouns:she_her</a> <span class="count">1</span>
+                                </li>
+                                
+                                <li class="tag-type-general">
+                                <a href="#rating:safe">rating:safe</a> <span class="count">47</span>
+                                </li>
+                                
+                                <li class="tag-type-general">
+                                <a href="#status:Fixer">status:Fixer</a> <span class="count">1</span>
+                                </li>
+                                <li><h6>coordinates</h6></li>
+                                <li class="tag-type-general">
+                                <a href="#lat:50.886324">lat:50.886324</a> <span class="count">1</span>
+                                </li>
+                                
+                                <li class="tag-type-general">
+                                <a href="#lon:&#32;-1.394097">lon: -1.394097</a> <span class="count">1</span>
+                                </li>
+                                <li><h6>tags</h6></li>
+                                <li class="tag-type-general">
+                                <a href="#activeworlds">activeworlds</a> <span class="count">1</span>
+                                </li>
+                                
+                                <li class="tag-type-general">
+                                <a href="#bash">bash</a> <span class="count">1</span>
+                                </li>
+                                
+                                <li class="tag-type-general">
+                                <a href="#byond">byond</a> <span class="count">4</span>
+                                </li>
+                                
+                                <li class="tag-type-general">
+                                <a href="#c3d">c3d</a> <span class="count">1</span>
+                                </li>
+                                
+                                <li class="tag-type-general">
+                                <a href="#coding">coding</a> <span class="count">2</span>
+                                </li>
+                                
+                                <li class="tag-type-general">
+                                <a href="#cooking">cooking</a> <span class="count">1</span>
+                                </li>
+                                
+                                <li class="tag-type-general">
+                                <a href="#cosplay">cosplay</a> <span class="count">1</span>
+                                </li>
+                                
+                                <li class="tag-type-general">
+                                <a href="#cryptic3d">cryptic3d</a> <span class="count">1</span>
+                                </li>
+                                
+                                <li class="tag-type-general">
+                                <a href="#csharp">csharp</a> <span class="count">4</span>
+                                </li>
+                                
+                                <li class="tag-type-general">
+                                <a href="#css">css</a> <span class="count">1</span>
+                                </li>
+                                
+                                <li class="tag-type-general">
+                                <a href="#d-fens">d-fens</a> <span class="count">1</span>
+                                </li>
+                                
+                                <li class="tag-type-general">
+                                <a href="#database_management">database_management</a> <span class="count">1</span>
+                                </li>
+                                
+                                <li class="tag-type-general">
+                                <a href="#demi-ace">demi-ace</a> <span class="count">1</span>
+                                </li>
+                                
+                                <li class="tag-type-general">
+                                <a href="#developer">developer</a> <span class="count">4</span>
+                                </li>
+                                
+                                <li class="tag-type-general">
+                                <a href="#development">development</a> <span class="count">1</span>
+                                </li>
+                                
+                                <li class="tag-type-general">
+                                <a href="#dm">dm</a> <span class="count">4</span>
+                                </li>
+                                
+                                <li class="tag-type-general">
+                                <a href="#flightsim">flightsim</a> <span class="count">1</span>
+                                </li>
+                                
+                                <li class="tag-type-general">
+                                <a href="#furry">furry</a> <span class="count">1</span>
+                                </li>
+                                
+                                <li class="tag-type-general">
+                                <a href="#gardening">gardening</a> <span class="count">1</span>
+                                </li>
+                                
+                                <li class="tag-type-general">
+                                <a href="#gender_ambiguous">gender_ambiguous</a> <span class="count">1</span>
+                                </li>
+                                
+                                <li class="tag-type-general">
+                                <a href="#graphics_design">graphics_design</a> <span class="count">4</span>
+                                </li>
+                                
+                                <li class="tag-type-general">
+                                <a href="#gtarp">gtarp</a> <span class="count">1</span>
+                                </li>
+                                
+                                <li class="tag-type-general">
+                                <a href="#horticulture">horticulture</a> <span class="count">1</span>
+                                </li>
+                                
+                                <li class="tag-type-general">
+                                <a href="#html">html</a> <span class="count">1</span>
+                                </li>
+                                
+                                <li class="tag-type-general">
+                                <a href="#image_editing">image_editing</a> <span class="count">1</span>
+                                </li>
+                                
+                                <li class="tag-type-general">
+                                <a href="#irc">irc</a> <span class="count">1</span>
+                                </li>
+                                
+                                <li class="tag-type-general">
+                                <a href="#linux">linux</a> <span class="count">4</span>
+                                </li>
+                                
+                                <li class="tag-type-general">
+                                <a href="#modding">modding</a> <span class="count">4</span>
+                                </li>
+                                
+                                <li class="tag-type-general">
+                                <a href="#network_security">network_security</a> <span class="count">2</span>
+                                </li>
+                                
+                                <li class="tag-type-general">
+                                <a href="#optimization">optimization</a> <span class="count">1</span>
+                                </li>
+                                
+                                <li class="tag-type-general">
+                                <a href="#photoshop">photoshop</a> <span class="count">1</span>
+                                </li>
+                                
+                                <li class="tag-type-general">
+                                <a href="#php">php</a> <span class="count">4</span>
+                                </li>
+                                
+                                <li class="tag-type-general">
+                                <a href="#python">python</a> <span class="count">6</span>
+                                </li>
+                                
+                                <li class="tag-type-general">
+                                <a href="#real-time_strategy">real-time_strategy</a> <span class="count">4</span>
+                                </li>
+                                
+                                <li class="tag-type-general">
+                                <a href="#role-playing_games">role-playing_games</a> <span class="count">1</span>
+                                </li>
+                                
+                                <li class="tag-type-general">
+                                <a href="#sandbox">sandbox</a> <span class="count">4</span>
+                                </li>
+                                
+                                <li class="tag-type-general">
+                                <a href="#scripting">scripting</a> <span class="count">4</span>
+                                </li>
+                                
+                                <li class="tag-type-general">
+                                <a href="#search_engine_optimization">search_engine_optimization</a> <span class="count">1</span>
+                                </li>
+                                
+                                <li class="tag-type-general">
+                                <a href="#second_life">second_life</a> <span class="count">1</span>
+                                </li>
+                                
+                                <li class="tag-type-general">
+                                <a href="#seo">seo</a> <span class="count">1</span>
+                                </li>
+                                
+                                <li class="tag-type-general">
+                                <a href="#simulators">simulators</a> <span class="count">1</span>
+                                </li>
+                                
+                                <li class="tag-type-general">
+                                <a href="#sql">sql</a> <span class="count">1</span>
+                                </li>
+                                
+                                <li class="tag-type-general">
+                                <a href="#sysadmin">sysadmin</a> <span class="count">1</span>
+                                </li>
+                                
+                                <li class="tag-type-general">
+                                <a href="#vegetarianism">vegetarianism</a> <span class="count">1</span>
+                                </li>
+                                
+                                <li class="tag-type-general">
+                                <a href="#video_editing">video_editing</a> <span class="count">1</span>
+                                </li>
+                                
+                                <li class="tag-type-general">
+                                <a href="#web_design">web_design</a> <span class="count">1</span>
+                                </li>
+                                
+                                <li class="tag-type-general">
+                                <a href="#web_development">web_development</a> <span class="count">1</span>
+                                </li>
+                                
+      </ul>
+      <ul id="tag-sidebar" class="profile-sidebar-options">
+          <li><h6>info</h6></li>
+          
+          <li><img src="./static/img/researcx-qr.png?v=1615238846" alt="user:researcx" title="user:researcx" class="user-qr large"></li>
+          
+          
+    </ul>
+    </div>
+
+    <div id="page-content" class="profile-content">
+      <h1 id="profile-username">researcx</h1>
+      <li>&nbsp;</li><strong>About:</strong>
+      <span class="right-alt project-alt alt-pad-x2">cd/tg / cosplayer / modder / FOSSdev / computer breaker / flightsim enthusiast</span>
+      <br/>
+      <li><span class="center plus2"><a href="https://github.com/researcx" target="_blank" rel="noopener nofollow">GitHub</a> (<a href="https://github.com/researcx?tab=repositories" target="_blank" rel="noopener nofollow">Repos</a>, <a href="https://gist.github.com/researcx" target="_blank" rel="noopener nofollow">Gists</a>, <a href="https://github.com/researcx?tab=stars" target="_blank" rel="noopener nofollow">Starred</a>), <a href="https://gitlab.com/researcx" target="_blank" rel="noopener nofollow">GitLab</a> (<a href="https://gitlab.com/users/researcx/snippets" target="_blank" rel="noopener nofollow">Snippets</a>)</span></li>
+      <li><span class="right-alt project-alt center"><a href="https://soundcloud.com/researchdev" target="_blank" rel="noopener">soundcloud</a>, <a href="https://www.youtube.com/playlist?list=PL35BXY0Q2A2LtQdufdMqmSbfvHqNsS58k" target="_blank" rel="noopener">youtube music</a>, <a href="./dir/musicplaylists.html" target="_blank" rel="noopener">music playlists</a>, <a href="./dir/spotify_liked.txt" target="_blank" rel="noopener">spotify</a>, <a href="http://steamcommunity.com/profiles/76561197970661244" target="_blank" rel="noopener">steam</a></span></li>
+      <br/>
+      <p><strong>Things that I've worked on:</strong></p>
+      <ul>
+
+      <li><span class="alt-pad-x2 project-header"><a href="https://gist.github.com/researcx/aff274bf5f806af0cf77d23da4c8aa34" target="blank" rel="nofollow">proxmox-backup.sh</a></span></li>
+      <li><span class="right-alt project-alt alt-pad-x3">A script to backup Proxmox containers and host configs with the optional ability to automatically store them in LUKS-encrypted images. Also available for <a href="https://gist.github.com/researcx/4ec53ed98270aa60f8ea93b3cf465aeb" target="blank" rel="nofollow">LXD</a> (full-backup.sh).</span></li>
+
+      <li><span class="alt-pad-x2 project-header"><a href="https://gist.github.com/researcx/783ab2eb5a0edcc3971274ec5cf2d991" target="blank" rel="nofollow">githubrepos.py</a> <span class="alt-text demo-link">[<a href="https://archive.today/newest/http://7ug46mpbiaurogeospr3vx5kh4ad7bkiduqv7nyvtlm5awkdsve2z7ad.onion/static/img/Repositories/github.html" target="_blank" rel="noopener nofollow">DEMO</a>]</span></span></li>
+      <li><span class="right-alt project-alt alt-pad-x3">Periodically make a HTML page of your GitHub repos (requires GitHub cli tools (gh command)).</span></li>
+
+      <li><span class="alt-pad-x2 project-header">researcx.github.io/<a href="https://researcx.github.io/ss13-lawgen/" target="blank" rel="nofollow">ss13-lawgen</a> <span class="alt-text warning-text">[Content-Warning]</span></span></li>
+      <li><span class="right-alt project-alt alt-pad-x3">Space Station 13 AI Law Generator (Browser Version).</span></li>
+
+      <li><span class="alt-pad-x2 project-header">researcx/<a href="https://github.com/researcx/spacetopia" target="blank" rel="nofollow">spacetopia</a> (Spacetopia) <span class="alt-text">[Source code now available!]</span></span></li>
+      <li><span class="right-alt project-alt alt-pad-x3">A role-play oriented Space Station 13 mod which adds certain Second-Life features and character customisation amongst other changes that are highly inspired by EVE Online and Furcadia. <span class="alt-text images-link">[<a href="https://github.com/researcx/spacetopia/blob/master/README.md" target="_blank" rel="noopener nofollow">IMAGES</a>]</span></span></li>
+      <a href="https://github.com/researcx/spacetopia/blob/master/README.md" target="_blank" class="image-link" rel="noopener nofollow"><img src="./static/img/dev/spacetopia.png" class="image-inline" loading="lazy" alt=""></a>
+
+      <li><span class="alt-pad-x2 project-header"><a href="https://gist.github.com/researcx/1996c82f09040df1d9acfa1deecbbadd" target="blank" rel="nofollow">weatherscript.sh</a></span></li>
+      <li><span class="right-alt project-alt alt-pad-x3">Adjust cpu frequency based on time and weather. (For solar panels.)</span></li>
+
+      <li><span class="alt-pad-x2 project-header"><a href="https://gist.github.com/researcx/9038cd6427980a57d6588bf7a0999290" target="blank" rel="nofollow">discord_export_friends.py</a></span></li>
+      <li><span class="right-alt project-alt alt-pad-x3">Python script to backup discord tags with user IDs. (For friend lists.)</span></li>
+
+      <li><span class="alt-pad-x2 project-header">researcx.github.io/<a href="https://researcx.github.io/square_avatar/" target="blank" rel="nofollow">square_avatar</a> <span class="alt-text">[Fork]</span></span></li>
+      <li><span class="right-alt project-alt alt-pad-x3">Square avatar generator for Twitter.</span></li>
+
+      <li><span class="alt-pad-x2 project-header">researcx/<a href="https://github.com/researcx/timg" target="blank" rel="nofollow">timg</a> (temporary image)</span></li>
+      <li><span class="right-alt project-alt alt-pad-x3">Self-destructing image upload server in Python+Flask. Image is loaded in base64 and destroyed as soon as it is viewed (experimental).</span></li>
+
+      <li><span class="alt-pad-x2 project-header"><a href="https://gist.github.com/researcx/d384a1384690aa96485d11490a33a2f6" target="blank" rel="nofollow">DonateBot.py</a></span></li>
+      <li><span class="right-alt project-alt alt-pad-x3">Game-server style "donate to us" announcer bot for IRC channels.</span></li>
+
+      <li><span class="alt-pad-x2 project-header">researcx/<a href="https://github.com/researcx/pyborg-1up" target="blank" rel="nofollow">pyborg-1up</a> <span class="alt-text">[Fork]</span></span></li>
+      <li><span class="right-alt project-alt alt-pad-x3">jrabbit/<a href="https://github.com/jrabbit/pyborg-1up" target="blank" rel="nofollow">pyborg-1up</a> fork which adds server password and channel-specific trigger word support.</span></li>
+
+      <li><span class="alt-pad-x2 project-header">researcx/<a href="https://github.com/researcx/conduit" target="blank" rel="nofollow">conduit</a></span></li>
+      <li><span class="right-alt project-alt alt-pad-x3">A multi-channel multi-network irc relay+service system.</span></li>
+
+      <li><span class="alt-pad-x2 project-header">researcx/<a href="https://github.com/researcx/weechat-confsave" target="blank" rel="nofollow">weechat-confsave</a></span></li>
+      <li><span class="right-alt project-alt alt-pad-x3">A weechat config exporter which includes non-default variables. Outputs to /set commands, myweechat.md-style markdown or raw config.</span></li>
+
+      <li><span class="alt-pad-x2 project-header">researcx/<a href="https://github.com/researcx/lxd-tools" target="blank" rel="nofollow">lxd-tools</a></span></li>
+      <li><span class="right-alt project-alt alt-pad-x3">LXD powertool for container mass-management, migration and automation.</span></li>
+
+      <li><span class="alt-pad-x2 project-header">researcx.github.io/<a href="https://researcx.github.io/random-fursona/" target="blank" rel="nofollow">random-fursona</a></span></li>
+      <li><span class="right-alt project-alt alt-pad-x3">Fetch a random fursona from thisfursonadoesnotexist.com</span></li>
+
+      <li><span class="alt-pad-x2 project-header">researcx/<a href="https://github.com/researcx/xch" target="blank" rel="nofollow">xch</a> <span class="alt-text demo-link">[<a href="#" target="_blank" rel="noopener nofollow">DEMO</a>]</span></span></li>
+      <li><span class="right-alt project-alt alt-pad-x3">Imageboard software oriented towards research and development communities.</span></li>
+      <img src="./static/img/dev/xch.png" class="image-inline" loading="lazy" alt="">
+
+      <li><span class="alt-pad-x2 project-header">researcx/<a href="https://github.com/researcx/infinity" target="blank" rel="nofollow">infinity</a> <span class="alt-text">[Fork]</span></span></li>
+      <li><span class="right-alt project-alt alt-pad-x3">infinity fork with fixes, instructions for modern installation, basic recent threads functionality and some added missing files.</span></li>
+
+      <li><span class="alt-pad-x2 project-header">researcx/<a href="https://github.com/researcx/pydirlist" target="blank" rel="nofollow">pydirlist</a></span></li>
+      <li><span class="right-alt project-alt alt-pad-x3">Directory listing script based on SPKZ's + Garry's Directory Listing.</span></li>
+      <img src="./static/img/dev/pydirlist.png" class="image-inline" loading="lazy" alt="">
+
+      <li><span class="alt-pad-x2 project-header"><a href="https://gist.github.com/researcx/3d48686fbef0dd0251d4803eb72c96a5" target="blank" rel="nofollow">base-weechat-matrix-bitlbee-setup.txt</a></span></li>
+      <li><span class="right-alt project-alt alt-pad-x3">Basic install of weechat and (optionally) weechat-matrix, bitlbee on Arch Linux.</span></li>
+      
+
+      <li><span class="alt-pad-x2 project-header">researchdepartment/<a href="https://github.com/researchdepartment/dotfiles-qubes3.2-i3" target="blank" rel="nofollow">dotfiles-qubes3.2-i3</a></span></li>
+      <li><span class="right-alt project-alt alt-pad-x3">Instructions for bringing rice to Qubes OS (with researcx/<a href="https://github.com/researcx/i3-gaps-qubes" target="blank" rel="nofollow">i3-gaps-qubes</a>, numix themes/icons, lucy/<a href="https://github.com/lucy/tewi-font" target="blank" rel="nofollow">tewi</a>).</span></li>
+
+      <li><span class="alt-pad-x2 project-header">researcx/<a href="https://github.com/researcx/i3-gaps-qubes" target="blank" rel="nofollow">i3-gaps-qubes</a></span></li>
+      <li><span class="right-alt project-alt alt-pad-x3">i3-gaps patch for qubes 3.2.</span></li>
+      <img src="./static/img/dev/i3-qubes.png" class="image-inline" loading="lazy" alt="">
+
+      <li><span class="alt-pad-x2 project-header">researcx/<a href="https://github.com/researcx/goscraper" target="blank" rel="nofollow">goscraper</a> <span class="alt-text">[Fork]</span></span></li>
+      <li><span class="right-alt project-alt alt-pad-x3">Fork of the goscraper webpage-scraper which adds timeout, proxy and user-agent support.</span></li>
+
+      <li><span class="alt-pad-x2 project-header"><a href="https://gist.github.com/researcx/216482572b15fe299ee742899c741e50" target="blank" rel="nofollow">void-linux-install.sh</a></span></li>
+      <li><span class="right-alt project-alt alt-pad-x3">Minimal instructions for installing Void Linux on MBR + Legacy BIOS.</span></li>
+
+      <li><span class="alt-pad-x2 project-header"><a href="https://gist.github.com/researcx/e3b0476f2f75165f004773f8add4a7ad" target="blank" rel="nofollow">arch-linux-install.sh</a></span></li>
+      <li><span class="right-alt project-alt alt-pad-x3">Minimal instructions for installing Arch Linux on GPT or MBR on UEFI or Legacy BIOS.</span></li>
+
+      <li><span class="alt-pad-x2 project-header">researcx/<a href="https://github.com/researcx/oragono-laced" target="blank" rel="nofollow">oragono-laced</a> <span class="alt-text">[Fork]</span></span></li>
+      <li><span class="right-alt project-alt alt-pad-x3">Oragono IRCd mod providing imageboard features and anonymity to IRC.</span></li>
+
+      <li><span class="alt-pad-x2 project-header"><a href="https://gist.github.com/researcx/26558dfbfd9417157f20b7c236f28f05" target="blank" rel="nofollow">myweechat.md</a></span></li>
+      <li><span class="right-alt project-alt alt-pad-x3">My personal weechat configuration.</span></li>
+
+      <li><span class="alt-pad-x2 project-header">researcx/<a href="https://github.com/researcx/znc-httpadmin" target="blank" rel="nofollow">znc-httpadmin</a> <span class="alt-text">[Fork]</span></span></li>
+      <li><span class="right-alt project-alt alt-pad-x3">Added user count and user list API call to znc-httpadmin.</span></li>
+
+      <li><span class="alt-pad-x2 project-header"><a href="https://gist.github.com/researcx/8e583f8cfc68562355408b9b854ff31c" target="blank" rel="nofollow">config_audio.md</a></span></li>
+      <li><span class="right-alt project-alt alt-pad-x3">Linux system-wide audio tweaks (24bit 192 kHz HD Audio + A=432 Hz Tuning + Equalizer).</span></li>
+
+      <li><span class="alt-pad-x2 project-header">researcx/<a href="https://github.com/researcx/SynDBB" target="blank" rel="nofollow">SynDBB</a> (Cyndi)</span></li>
+      <li><span class="right-alt project-alt alt-pad-x3">An IRC, imageboard, Facepunch and SomethingAwful inspired forum software. <span class="alt-text images-link">[<a href="https://github.com/researcx/SynDBB/blob/master/SCREENSHOTS.md" target="_blank" rel="noopener nofollow">IMAGES</a>]</span></span></li>
+      <a href="https://github.com/researcx/SynDBB/blob/master/SCREENSHOTS.md" target="_blank"  class="image-link" rel="noopener nofollow"><img src="./static/img/dev/syndbb.png" class="image-inline" loading="lazy" alt=""></a>
+
+      <li><span class="alt-pad-x2 project-header"><a href="https://gist.github.com/researcx/1f631f9eebaef66b76aa938ea9309a6d" target="blank" rel="nofollow">.bashrc</a></span></li>
+      <li><span class="right-alt project-alt alt-pad-x3">Useful shell aliases.</span></li>
+
+      <li><span class="alt-pad-x2 project-header"><a href="researcx#" target="blank">file_download.py</a> (unavailable)</span></li>
+      <li><span class="right-alt project-alt alt-pad-x3">Automated per-channel/server/buffer link/file archiver script for weechat (async).</span></li>
+
+      <li><span class="alt-pad-x2 project-header">researcx/<a href="https://github.com/researcx/fp-ban" target="blank" rel="nofollow">fp-ban</a> (unavailable)</span></li>
+      <li><span class="right-alt project-alt alt-pad-x3">Evercookie based fingerprinting + user ban system. Previously used on the Space Station 13 server.</span></li>
+
+      <li><span class="alt-pad-x2 project-header"><a href="https://gist.github.com/researcx/4ca1b1b0dcbb720ef824cc5ee41d2716" target="blank" rel="nofollow">dnsbl.php</a></span></li>
+      <li><span class="right-alt project-alt alt-pad-x3">DNSBL user/bot blocking in PHP.</span></li>
+
+      <li><span class="alt-pad-x2 project-header"><a href="https://gist.github.com/researcx/b4db73f57143877df0e45d4338f21b9f" target="blank" rel="nofollow">simple_bash_uploader.sh</a></span></li>
+      <li><span class="right-alt project-alt alt-pad-x3">Bash file/screenshot upload script (scrot compatible).</span></li>
+
+      <li><span class="alt-pad-x2 project-header">researcx/<a href="https://github.com/researcx/marketplace-php" target="blank" rel="nofollow">marketplace-php</a> (unavailable)</span></li>
+      <li><span class="right-alt project-alt alt-pad-x3">Modular shop/market system in PHP, originally based on my <a href="https://github.com/researcx/xenforo-mods" target="blank" rel="nofollow">XenForo forum shop mod</a>. Supports conversion between virtual and fiat currencies.</span></li>
+      <img src="./static/img/dev/market.png" class="image-inline" loading="lazy" alt="">
+
+      <li><span class="alt-pad-x2 project-header">researcx/<a href="https://github.com/researcx/xenforo-mods" target="blank" rel="nofollow">xenforo-mods</a></span></li>
+      <li><span class="right-alt project-alt alt-pad-x3">XenForo forum API for Space Station 13 integration (user accounts, trophies, bank, shop), Facepunch-style grammar points/smartness system, imageboard-style ban/warning system. <span class="alt-text images-link">[<a href="https://github.com/researcx/xenforo-mods/blob/master/README.md" target="_blank" rel="noopener nofollow">IMAGES</a>]</span></span></li>
+      <a href="https://github.com/researcx/xenforo-mods/blob/master/README.md" target="_blank"  class="image-link" rel="noopener nofollow"><img src="./static/img/dev/xfban.png" class="image-inline" loading="lazy" alt=""></a>
+
+      <li><span class="alt-pad-x2 project-header"><a href="https://github.com/researcx/spacetopia/blob/master/server.sh" target="blank" rel="nofollow">Space Station 13 Linux Server Toolkit</a></span></li>
+
+      <li><span class="alt-pad-x2 project-header"><a href="https://gist.github.com/researcx/21233a8756993e1f03972c1886eb865e" target="blank" rel="nofollow">git-update.sh</a></span></li>
+      <li><span class="right-alt project-alt alt-pad-x3">Git repository auto-updater.</span></li>
+
+      <li><span class="alt-pad-x2 project-header">researcx/<a href="https://github.com/researcx/d2station-full" target="blank" rel="nofollow">d2station-full</a> <span class="alt-text warning-text">[Content-Warning]</span></span></li>
+      <li><span class="right-alt project-alt alt-pad-x3">Official release of the D2Station v1,v2 and v4 Space Station 13 codebases for archival purposes. <span class="alt-text images-link">[<a href="https://github.com/researcx/d2station-full/blob/master/README.md" target="_blank" rel="noopener nofollow">IMAGES</a>]</span></span></li>
+      <a href="https://github.com/researcx/d2station-full/blob/master/README.md" target="_blank"  class="image-link" rel="noopener nofollow"><img src="./static/img/dev/d2station.png" class="image-inline" loading="lazy" alt=""></a>
+
+      <li><span class="alt-pad-x2 project-header">researcx/<a href="https://github.com/researcx/opensim-mod" target="blank" rel="nofollow">opensim-mod</a> (unavailable)</span></li>
+      <li><span class="right-alt project-alt alt-pad-x3"><a href="http://opensimulator.org/wiki/Main_Page" target="blank" rel="nofollow">OpenSimulator</a> mods for XenForo bdBank currency and user integration. <span class="alt-text images-link">[<a href="https://archive.today/newest/http://7ug46mpbiaurogeospr3vx5kh4ad7bkiduqv7nyvtlm5awkdsve2z7ad.onion/?f=Games;OpenSim;" target="_blank" rel="noopener nofollow">IMAGES</a>]</span></span></li>
+      <a href="https://archive.today/newest/http://7ug46mpbiaurogeospr3vx5kh4ad7bkiduqv7nyvtlm5awkdsve2z7ad.onion/?f=Games;OpenSim;" target="_blank"  class="image-link" rel="noopener nofollow"><img src="./static/img/dev/opensim.jpg" class="image-inline" loading="lazy" alt=""></a>
+
+      <li><span class="alt-pad-x2 project-header"><a href="https://gist.github.com/researcx/ebf32c517d1dcc246f9141dbe1dcfcd2" target="blank" rel="nofollow">scan_pics.php</a></span></li>
+      <li><span class="right-alt project-alt alt-pad-x3">Mass incremental+prefix+suffix photo scanner for direct URLs.</span></li>
+
+      <li><span class="alt-pad-x2 project-header">Various <a href="https://archive.today/newest/http://7ug46mpbiaurogeospr3vx5kh4ad7bkiduqv7nyvtlm5awkdsve2z7ad.onion/?f=Games;Garry%27s%20Mod;" target="blank" rel="nofollow">Garry's Mod roleplay scripts + hud design</a>.</span></li>
+      <li><span class="right-alt project-alt alt-pad-x3"><span class="alt-text images-link">[<a href="https://archive.today/newest/http://7ug46mpbiaurogeospr3vx5kh4ad7bkiduqv7nyvtlm5awkdsve2z7ad.onion/?f=Games;Garry%27s%20Mod;" target="_blank" rel="noopener nofollow">IMAGES</a>]</span></span></li>
+
+
+      <li><span class="alt-pad-x2 project-header">Source Mapping</span></li>
+      <li><span class="right-alt project-alt alt-pad-x3"><a href="https://github.com/researcx/gm_wireconstruct_rc" target="blank" rel="nofollow">gm_wireconstruct</a>, <a href="https://github.com/researcx/rp_d2city" target="blank" rel="nofollow">rp_d2city</a>, rp_d2country, <a href="https://github.com/researcx/gm_ze_airportz_b10" target="blank" rel="nofollow">gm_ze_airportz_b10</a>(+_winter) (spacebuild temperature compatible), de_hotel.</span></li>
+      <a href="https://archive.today/newest/http://7ug46mpbiaurogeospr3vx5kh4ad7bkiduqv7nyvtlm5awkdsve2z7ad.onion/?f=Games;Garry%27s%20Mod;" target="_blank"  class="image-link" rel="noopener nofollow"><img src="./static/img/dev/d2city.jpg" class="image-inline" loading="lazy" alt=""></a>
+
+      <li><span class="alt-pad-x2 project-header">Source Modding</span></li>
+      <li><span class="right-alt project-alt alt-pad-x3">City 47, texturing (custom map textures), model editing (custom player-models).</span></li>
+
+      <li><span class="alt-pad-x2 project-header">Markov forum bot</span></li>
+
+      <li><span class="alt-pad-x2 project-header">SMF forum mods</span></li>
+      <li><span class="right-alt project-alt alt-pad-x3">Neopets-style RP item shop, smartness, ban list, improved ban system, upload site with file listing, thumbnails, search, user to user file sharing/transfers.</span></li>
+
+      <li><span class="alt-pad-x2 project-header">Instant-messaging system with an IRC backend. (unavailable)</span></li>
+
+      <li><span class="alt-pad-x2 project-header">Grand Theft Auto Modding</span></li>
+      <li><span class="right-alt project-alt alt-pad-x3">San Andreas texture overhaul, improved lighting, improved water @ GTAGaming and The_Borg Gaming, SA:MP scripts (Drive&amp;Kill Roleplay, Drive&amp;Kill), MTA:R mapping.</span></li>
+
+      <li><span class="alt-pad-x2 project-header">ActiveWorlds City Builds</span></li>
+      <li><span class="right-alt project-alt alt-pad-x3">Rockford, Parameira, D2City.</span></li>
+      <li>&nbsp;</li>
+      <li><span class="right-alt project-alt center">coding (Python, PHP, C#), software &amp; web development. scripting, automation. database systems (SQL). graphics &amp; web design, video editing. modding, spriting, game development. project lead &amp; community administration experience.</span></li>
+      </ul>
+      <p><strong>Contact Information:</strong></p>
+      <ul>
+        <li><span class="left-alt">I am a vulnerable guy who needs to be held by big strong arms. I am a man in need of looking after, I want to be told that I am the only guy in the world. I've got a shit load of cash and I want to spend it on the first guy I meet.</span></li>
+      </ul>
+      <ul>
+        <li>Tox:</li>
+        <li><span class="left-alt">1C1986994ACF31FCAE3F96D5FDE38BA31F0B6AD4E954E1D8A6C63A6FFA9DF224C73A95761416<br/>
+        C9C626815BEE8E0E292C4A2FCD5DF90B8F9098CDC87FDC31FE05BECAC4AA6B1D2AC76603CD5D</span></li>
+        <li>XMPP:</li>
+        <li><span class="left-alt">researcx@xmpp.social</span></li>
+        <li>Matrix:</li>
+        <li><span class="left-alt">@kei:kde.org</span></li>
+        <li>Telegram:</li>
+        <li><span class="left-alt"><a href="https://t.me/researcx" target="_blank" rel="noopener nofollow">researcx</a></span></li>
+      </ul>
+      <br/>
+      <p><strong>Support:</strong></p>
+      <div id="0-b" class="panel-body panel-images">
+        <div class="image item">
+          <a href="https://pastebin.com/raw/WDMEV1hj#86PHZTrVFtRMqPvM4F6k5BKYz5EKD1eoTepvqpNGEcktEkQ9xuVt98biL4QzCCsENFKJP58nPTPbyB6CG33gy5FWDxacA1A" target="_blank">
+            <div class="imgbox-full"><img src="./static/img/donate/xmr.png" alt=""></div>
+          </a>
+          <span title="Monero">XMR</span>
+        </div>
+        <div class="image item">
+          <a href="https://commerce.coinbase.com/checkout/aee4db37-b4e4-4a21-9a85-1d7cd04e0ede" target="_blank">
+            <div class="imgbox-full"><img src="./static/img/donate/coinbase-eth.png" alt=""></div>
+          </a>
+          <span title="Ethereum">ETH</span>
+        </div>
+        <div class="image item">
+          <a href="https://commerce.coinbase.com/checkout/aee4db37-b4e4-4a21-9a85-1d7cd04e0ede" target="_blank">
+            <div class="imgbox-full"><img src="./static/img/donate/coinbase-btc.png" alt=""></div>
+          </a>
+          <span title="Bitcoin">BTC</span>
+        </div>
+      </div>
+      <ul>
+        <li>XMR:</li>
+        <li><span class="left-alt">86PHZTrVFtRMqPvM4F6k5BKYz5EKD1eoTepvqpNGEcktEkQ9xuVt98biL4QzCCsENFKJP58nPTPbyB6CG33gy5FWDxacA1A</span></li>
+        <li>BTC, LTC, ETH, USDC, DOGE, BCH, USDT, DAI via <a href="https://commerce.coinbase.com/checkout/aee4db37-b4e4-4a21-9a85-1d7cd04e0ede" target="_blank" rel="noopener nofollow">coinbase</a></li>
+        <li>Liberapay: <a href="https://liberapay.com/researcx/donate" rel="nofollow">https://liberapay.com/researcx/donate</a></li>
+        <li>&amp; <a href="https://linktr.ee/keitree" target="blank" rel="nofollow">more</a> (paypal, cashapp, square)</li>
+      </ul>
+      <br/>
+      <p><strong>Image Galleries:</strong></p>
+      <li><span class="left-alt-gallery">&gt; <a href="./dir/" target="_blank" rel="noopener nofollow">directory listing - /Technology/</a></span></li>
+      <p><a href="./dir/" target="_blank" class="image-link" rel="noopener nofollow"><img src="./static/img/gallery/technology.jpg" class="image-gallery-inline" loading="lazy" alt=""></a></p>
+      <li><span class="right-alt-gallery"><a href="./dir/" target="_blank" rel="noopener nofollow">view more...</a></span></li><br/>
+      <li><span class="left-alt-gallery">&gt; <a href="./dir/" target="_blank" rel="noopener nofollow">directory listing - /Photos/</a></span></li>
+      <p><a href="./dir/" target="_blank" class="image-link" rel="noopener nofollow"><img src="./static/img/gallery/photography.jpg" class="image-gallery-inline" loading="lazy" alt=""></a></p>
+      <li><span class="right-alt-gallery"><a href="./dir/" target="_blank" rel="noopener nofollow">view more...</a></span></li><br/>
+      <li><span class="left-alt-gallery">&gt; <a href="./dir/" target="_blank" rel="noopener nofollow">directory listing - /Imagedump/</a></span></li>
+      <p><a href="./dir/" target="_blank" class="image-link" rel="noopener nofollow"><img src="./static/img/gallery/imagedump.jpg" class="image-gallery-inline" loading="lazy" alt=""></a></p>
+      <li><span class="right-alt-gallery"><a href="./dir/" target="_blank" rel="noopener nofollow">view more...</a></span></li><br/>
+      <li><span class="left-alt-gallery">&gt; <a href="./dir/" target="_blank" rel="noopener nofollow">directory listing - /Development/</a></span></li>
+      <p><a href="./dir/" target="_blank" class="image-link" rel="noopener nofollow"><img src="./static/img/gallery/development.jpg" class="image-gallery-inline" loading="lazy" alt=""></a></p>
+      <li><span class="right-alt-gallery"><a href="./dir/" target="_blank" rel="noopener nofollow">view more...</a></span></li><br/>
+      <li><span class="left-alt-gallery">&gt; <a href="./dir/" target="_blank" rel="noopener nofollow">directory listing - /Cooking/</a></span></li>
+      <p><a href="./dir/" target="_blank" class="image-link" rel="noopener nofollow"><img src="./static/img/gallery/cooking.jpg" class="image-gallery-inline" loading="lazy" alt=""></a></p>
+      <li><span class="right-alt-gallery"><a href="./dir/" target="_blank" rel="noopener nofollow">view more...</a></span></li><br/>
+      <br/><br/>
+      <p id="profile-bio"><span class="pgp">-----BEGIN PGP PUBLIC KEY BLOCK----- <br />&nbsp;<br />xm8EYxG+OBMFK4EEACIDAwTVc8YnjDn1EOJanhfu5NVnL3g3AHyUJQMMiYl7TuNk 0n7TykT/coFrN6DmxhPVNJJcbU1hG+AhANqVCPMnaaNgB4doimIOcZDHXubK1+g5 UW5gzP+e56zC9kxv+wfbVLjNIEtlaXJhIFQgPGtlaS50cmVpLmE1MkBnbWFpbC5j b20+wpwEExMKACQFAmMRvjgCGy8DCwkHAxUKCAIeAQIXgAMWAgECGQEFCQeEzgAA CgkQ/hq9PaL7agc0GQGAlBmnpqWwboFuj3pirmL1m9njuQX11PmycUNH5YBnkMzP 2TCBii4GqO6xkU9jNhKOAYCAPc/CxMFCR8G11OsgJmr4X2vhzhcJXLerT7MW0kmP VAgTEwAr114XRhezAq+10IDOUgRjEb44EwgqhkjOPQMBBwIDBJRvFlmBp4P+9YnF 2VEx3xJ2hhzOOj1YizdeYrdftIId5m+QsFh6I1t+ch9pAulZSrpOUYO2+kkePBxw 954hGMzCwCcEGBMKAA8FAmMRvjgFCQeEzgACGy4AagkQ/hq9PaL7agdfIAQZEwoA BgUCYxG+OAAKCRBkBaUCmCPmJXtnAQDey6jpD7D4H8S8DP8mMEROFPYv//G8I8F0 YtVrThtOQQEAv8fcPgooEj+AWBfg00/w4DdH9OWG5Qt2SIBsuBc8HMqTJgF+Ji9t V0DvQVZ64mCKtd5AZR66owRHnLxGHC5Jg/aGdWXEWiHrDKnXd0asNxWrFlS1AX0Z MfjJXgjNym8wFSXRcrlxm2Wt8TBQE3IWQ7ES4UI4kPdL7DKh+JrlrMlVoNrKAkbO UgRjEb44EwgqhkjOPQMBBwIDBCd0qMyP/nuw1DIPucBnT2H8dQgFPZ7TOVwD3E6a kxyX32qE4EkUd0z3PCZgjn1QhOS2Ws+8TVSwsch7rSoCyUvCwCcEGBMKAA8FAmMR vjgFCQeEzgACGy4AagkQ/hq9PaL7agdfIAQZEwoABgUCYxG+OAAKCRCRRmJU4MPo oe3nAQDuh24FYacY8NTdXu/ai0woKZktPExNciBvqAR4VC81gwD8CoVDVdM7P4dY yTAr6WZ3ymkjgdKEISxkqrmTL0YfLqfmcwGA8aqBf44S1uAG9HVpQm0l7m4J+teg jdaXMxse2dAeHf0UbKRxDkUoB4vb+stA7PuoAXwLr/Ge+T1jgQPxpfikduiI4oco csqf/dOCXaWfD0IEibZxyGbPuzClKm23B7pdGYI= =3Uy5 =J4UH<br />-----END PGP PUBLIC KEY BLOCK----- </span> <br />&nbsp;<br /><br /></p>
+      <div class="subtext">"Halfway through reading a Hacker News thread I kick my boot into the computer. Even when it's an original thread I can't stand it. It feels good to smash the computer though. I feel like I'm participating in the discussion."</div>
+      <ul>
+      <li><span class="center antipixel-link"><span class="antipixel linux">&nbsp;</span>&nbsp;<span class="antipixel opensource">&nbsp;</span>&nbsp;<span class="antipixel hacker">&nbsp;</span>&nbsp;<span class="antipixel eff">&nbsp;</span>&nbsp;<a href="https://linktr.ee/keitree" target="_blank" rel="noopener nofollow"><span class="antipixel donate">&nbsp;</span></a>&nbsp;<span class="antipixel thinkpad">&nbsp;</span>&nbsp;<span class="antipixel code">&nbsp;</span></span></li>
+      </ul>
+      <p>&nbsp;</p>
+      </div>
+    
+    <div id="profile-extras">
+      <h6>info</h6>
+      
+      <p><img src="./static/img/researcx-qr.png?v=1615238846" alt="user:researcx" title="user:researcx" class="user-qr large"></p>
+      
+      
+    </div>
+  </div>
+</div>
+
+
+		</div>
+
+		<div id="footer">
+			
+			
+		</div>
+	</body>
+</html>

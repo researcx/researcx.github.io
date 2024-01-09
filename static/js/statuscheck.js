@@ -1,5 +1,5 @@
 var cachebuster = Math.round(new Date().getTime() / 1000);
-var check_file = "static/files/.thumbnails/Imagedump/7cbe510033142eb7943d5b21ca251759fee64292f9f4e86eda9fd4c793343621-150.png?v=" + cachebuster;
+var check_file = "static/files/thumbnails/Imagedump/7cbe510033142eb7943d5b21ca251759fee64292f9f4e86eda9fd4c793343621-150.png?v=" + cachebuster;
 var sites = {"https://7ug46mpbiaurogeospr3vx5kh4ad7bkiduqv7nyvtlm5awkdsve2z7ad.tor.pm/": "false",
             "https://7ug46mpbiaurogeospr3vx5kh4ad7bkiduqv7nyvtlm5awkdsve2z7ad.onion.re/": "false",
             "https://7ug46mpbiaurogeospr3vx5kh4ad7bkiduqv7nyvtlm5awkdsve2z7ad.onion.pet/": "false",

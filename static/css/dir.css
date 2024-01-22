@@ -15,34 +15,41 @@ html{
 body,html{
     padding: 0px;
     margin: 0px;
-    color: #d9770f;
-    background-color: #111;
+    color: #111;
+    background-color: #fff;
     font-size: 13px;
     line-height: 155%;
 }
+h1 {
+    font-family: Tahoma,sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: -2px;
+    margin-top: 0;
+}
 .header{
-    font-size: 11px;
-    background: #111;
-    border-top: 2px solid #000;
-    max-height: 100px;
+    background: #f7f7f7;
+    border-top: 2px solid #ebebeb;
+    max-height: 150px;
     bottom: 0px;
     position: absolute;
     width: 100%;
-    overflow: none;
+    overflow-x: hidden !important;
 }
 .header div{
-    background: #111;
-    height: 100px;
+    background: #f7f7f7;
+    height: 150px;
     overflow:scroll;
     padding-left: 8px;
     padding-right: 8px;
+    overflow-x: hidden !important;
 }
 .header p{
     margin-bottom: -10px;
 }
 .header a{
-    color: #aa7735 !important;
-    border-bottom: 2px dotted #8a693e;
+    color: #111 !important;
+    border-bottom: 2px dotted #333;
     text-decoration: none;
 }
 .site-frame{

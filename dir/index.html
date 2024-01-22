@@ -1,10 +1,32 @@
 <!DOCTYPE html>
-<html>
-  <head>
+<html lang="en">
+
+<head>
+    <title>directory listing</title>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="/static/img/favicon.png" />
+
+    <link id="themeselector" href="#" rel="stylesheet">
+
+
+    <meta name="twitter:card" content="https://researcx.gitlab.io/dir/" />
+    <meta name="twitter:site" content="Directory Listing" />
+    <meta name="twitter:creator" content="pydirlist" />
+
+    <meta property="og:url" content="https://researcx.gitlab.io/dir/" />
+    <meta property="og:title" content="Directory Listing" />
+    <meta property="og:description" content="/" />
+
+    <meta property="og:image" content="https://researcx.gitlab.io/dir/static/files/pic.jpg?v=1670439606" />
     <style>
       body, html{
         font-family: Monospace, Consolas;
         font-size: 24pt;
+        margin-top: 5% !important;
+        text-align: center;
       }
       img{
         max-width: 100%;
@@ -14,25 +36,42 @@
       }
       a{
         font-size: 24pt;
-        color: #000;
+        color: #111;
         font-weight: bold;
+        text-decoration: none !important;
+        border-top: 1px solid #a1a1a1;
+        border-bottom: 1px solid #a1a1a1;
+        background-color: #efefef;
+        padding: 14px;
+        display: block;
+        cursor: pointer;
+      }
+      a:hover{
+        background-color: #ffffda;
+        text-decoration: underline !important;
+        cursor: pointer;
       }
       .right-alt-gallery{
         text-align: right;
         float: right;
       }
+      li{
+        margin-bottom: 20px;
+      }
     </style>
+    <link href="../static/css/dir.css?v512" rel="stylesheet">
   </head>
   <body>
-    <li><span class="left-alt-gallery">&gt; <a href="/dir/Technology/" target="_blank" rel="noopener noreferrer">directory listing - /Technology/</a></span></li>
-    <p><a href="/dir/Technology/" target="_blank" class="image-link" rel="noopener noreferrer"><img src="../static/img/gallery/technology.jpg" class="image-gallery-inline" loading="lazy" alt=""></a></p>
-    <li><span class="right-alt-gallery"><a href="/dir/Technology/" target="_blank" rel="noopener noreferrer">view more...</a></span></li><br/>
-    <li><span class="left-alt-gallery">&gt; <a href="/dir/Imagedump/" target="_blank" rel="noopener noreferrer">directory listing - /Imagedump/</a></span></li>
-    <p><a href="/dir/Imagedump/" target="_blank" class="image-link" rel="noopener noreferrer"><img src="../static/img/gallery/imagedump.jpg" class="image-gallery-inline" loading="lazy" alt=""></a></p>
-    <li><span class="right-alt-gallery"><a href="/dir/Imagedump/" target="_blank" rel="noopener noreferrer">view more...</a></span></li><br/>
-    <li><span class="left-alt-gallery">&gt; <a href="/dir/Development/" target="_blank" rel="noopener noreferrer">directory listing - /Development/</a></span></li>
-    <p><a href="/dir/Development/" target="_blank" class="image-link" rel="noopener noreferrer"><img src="../static/img/gallery/development.jpg" class="image-gallery-inline" loading="lazy" alt=""></a></p>
-    <li><span class="right-alt-gallery"><a href="/dir/Development/" target="_blank" rel="noopener noreferrer">view more...</a></span></li>
+    <h1>Directory Listing - /</h1>
+    <li><span class="left-alt-gallery"><a href="/dir/Technology/" target="_blank" rel="noopener noreferrer">/Technology/</a></span></li>
+    <li><span class="left-alt-gallery"><a href="/dir/Imagedump/" target="_blank" rel="noopener noreferrer">/Imagedump/</a></span></li>
+    <li><span class="left-alt-gallery"><a href="/dir/Development/" target="_blank" rel="noopener noreferrer">/Development/</a></span></li>
+    <li><span class="left-alt-gallery"><a href="/dir/more.html" target="_blank" rel="noopener noreferrer">/Photos/</a></span></li>
+    <li><span class="left-alt-gallery"><a href="/dir/more.html" target="_blank" rel="noopener noreferrer">/Cooking/</a></span></li>
+    <li><span class="left-alt-gallery"><a href="/dir/more.html" target="_blank" rel="noopener noreferrer">/Food/</a></span></li>
+    <li><span class="left-alt-gallery"><a href="/dir/more.html" target="_blank" rel="noopener noreferrer">/Music/</a></span></li>
+    <li><span class="left-alt-gallery"><a href="/dir/more.html" target="_blank" rel="noopener noreferrer">/Documents/</a></span></li>
+    <li><span class="left-alt-gallery"><a href="/dir/more.html" target="_blank" rel="noopener noreferrer">/Games/</a></span></li>
     <script>
       var _paq = window._paq = window._paq || [];
       _paq.push(["disableCookies"]);

@@ -1,0 +1,17 @@
+<equalizationeffect>
+	<curve name="bass high boost k">
+		<point f="10" d="11.5"/>
+		<point f="21" d="6.5"/>
+		<point f="42" d="3.5"/>
+		<point f="83" d="0"/>
+		<point f="166" d="-2.5"/>
+		<point f="333" d="-4.5"/>
+		<point f="577" d="-6.5"/>
+		<point f="1000" d="-7.5"/>
+		<point f="2000" d="-6"/>
+		<point f="4000" d="-3.5"/>
+		<point f="8000" d="1"/>
+		<point f="16000" d="5"/>
+		<point f="20000" d="9"/>
+	</curve>
+</equalizationeffect>

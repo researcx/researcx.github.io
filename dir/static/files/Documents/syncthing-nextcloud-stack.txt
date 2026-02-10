@@ -1,0 +1,18 @@
+# syncthing nextcloud stack (lxd)
+#   only works if not using disk encryption
+#   minor glitches may occur 
+
+# two containers: syncthing (alpine) and nextcloud (alpine)
+
+# * syncthing container with the default folder as /Sync
+#   this folder is an external volume mounted into syncthing
+# * nextcloud container with the data folder configured as /var/lib/nextcloud/data
+
+lxc config device add syncthing sync disk source=/media/Sync path=/Sync
+
+# add syncthing folder to nextcloud
+lxc config device add nextcloud syncthing disk source=/media/syncthing path=/var/lib/nextcloud/data/<user>/files/syncthing
+
+# the syncthing wonder probably won't show up immediately
+# browse to the following address on your nextcloud instance
+# <my.nextcloud.instance>/apps/files/?dir=/syncthing

@@ -1,0 +1,27 @@
+  .imgbox, .imgbox img{
+    display: none !important;
+    visibility: hidden !important;
+  }
+  .imgbox-full, .imgbox-full img{
+    display: block !important;
+    visibility: visible !important;
+  }
+  .image, .imgbox-full img, .imgbox-full video{
+    height: auto !important;
+    width: 225px;
+    margin: 0 auto;
+  }
+  .image{
+    display: block !important;
+  }
+  .file-name a, .folder-name a{
+    font-size: 24px;
+    font-weight: bold;
+  }
+  @media only screen and (max-width: 700px) {
+    .image, .imgbox-full img, .imgbox-full video{
+      height: auto !important;
+      width: 125px;
+      margin: 0 auto;
+    }
+  }

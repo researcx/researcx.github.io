@@ -1,0 +1,127 @@
+@font-face{
+    font-family: 'JetBrainsMono';
+    src: url('//cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono/web/woff2/JetBrainsMono-Medium.woff2') format('woff2'),
+      url('//cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono/web/woff/JetBrainsMono-Medium.woff') format('woff'),
+      url('//cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono/ttf/JetBrainsMono-Medium.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+html,body, p, span, #header{
+    font-family: JetBrainsMono, Consolas, "Helvetica Neue",Helvetica,Arial,sans-serif !important;
+}
+html, body {
+    font-size: 13px;
+    color: #dc7224;
+    background-color: #0f0f0f;
+    text-transform: lowercase;
+}
+a {
+  color: #b2aca2;
+}
+.well {
+/*    background-image: url(//cdn.discordapp.com/attachments/969205782614798418/1017801949187407892/fasfsd.png) !important; */
+    background-repeat: repeat-y;
+    background-position: right;
+    background-color: #e74919 !important;
+    border: 0px none #c63d14;
+}
+.panel {
+    background-color: #121212;
+}
+.panel-default > .panel-heading {
+    color: #777;
+    background-color: #242424;
+    border-color: #262626;
+}
+.panel-default {
+    border-color: #262626;
+}
+.panel-warning > .panel-heading {
+    color: #777;
+    background-color: #242424;
+    border-color: #262626;
+}
+.panel-warning {
+    border-color: #262626;
+}
+.panel-success > .panel-heading {
+    color: #777;
+    background-color: #242424;
+    border-color: #262626;
+}
+.panel-success {
+    border-color: #262626;
+}
+.navbar-default {
+    background-color: #111;
+    border-color: #1e1e1e;
+}
+.label{
+    background-color: #dc7224;
+}
+.label-warning {
+    background-color: #dc7224;
+}
+.label-success {
+    background-color: #dc7224;
+}
+.label-info {
+    background-color: #dc7224;
+}
+html body div.container-fluid div#breadcrumb ul.breadcrumb.well.well-sm li a {
+    color: #000;
+    font-weight: bold;
+}
+html body div.container-fluid div#breadcrumb ul.breadcrumb.well.well-sm li.active a{
+    color: #fff !important;
+    font-weight: bold;
+}
+a:focus, a:hover {
+    color: #dc7224;
+}
+.breadcrumb > li + li::before {
+padding: 0px !important;
+}
+.well{
+-webkit-border-radius: 2px;
+-moz-border-radius: 2px;
+border-radius: 2px;
+}
+.panel{
+-webkit-border-radius: 2px;
+-moz-border-radius: 2px;
+border-radius: 2px;
+}
+.profile-link {
+    color: #aa7735 !important;
+}
+a.profile-link {
+  color: #aa7735 !important;
+  border-bottom: 1px dashed #606060;
+}
+.banner{
+border: 1px solid #000;
+margin-bottom: 5px;
+}
+a.fullblack{
+    color: #dc7224 !important;
+    text-decoration: none !important;
+}
+
+.file-name a, .folder-name a{
+    color: #dc7224 !important;
+}
+
+.image img, .image-grid img, .image video, .image-grid video{
+    background-image: repeating-conic-gradient(#222 0 25%, transparent 0 50%);
+}
+
+pre{
+    background-color: #000;
+    border: 1px solid #080707;
+    color: #dc7224;
+}
+
+a.meta-link{
+    color: #dc7224;
+  }

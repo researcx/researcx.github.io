@@ -1,0 +1,7 @@
+make comic bot automatically detect edited words/sentences (with asterisk at the end/before?) and remove messages pre-discord-edit
+make a twitter bot that posts a picked message from the list to twitter every day at a random interval
+	* messages should be coherent
+write a talk to transformer based web listener for use with pyborg
+randomize nicks in comicbot
+pay for ur fucking phone number
+re-fetch repos from github to gitlab (x)

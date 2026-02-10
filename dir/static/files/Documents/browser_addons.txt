@@ -1,0 +1,140 @@
+Archive Page 0.6.0
+Archive webpage with archive.today
+
+
+Cookie AutoDelete 3.8.2
+Control your cookies! Automatically delete unwanted cookies from your closed tabs while keeping the ones you want.
+https://github.com/Cookie-AutoDelete/Cookie-AutoDelete
+https://addons.mozilla.org/en-GB/firefox/addon/cookie-autodelete/
+
+
+Cookies and HTTP Headers analyser 2.6
+Cookies and HTTP Headers analyser according to OWASP guideline.
+
+
+Dark Reader 4.9.62
+Dark mode for every website. Take care of your eyes, use dark theme for night and daily browsing.
+http://darkreader.org/
+https://addons.mozilla.org/en-GB/firefox/addon/darkreader/
+
+
+Decentraleyes 2.0.17
+Protects you against tracking through "free", centralised, content delivery.
+https://decentraleyes.org
+https://addons.mozilla.org/en-GB/firefox/addon/decentraleyes/
+
+
+Exif Viewer 3.7.5
+Displays the EXIF and IPTC metadata stored in JPEG files.
+http://araskin.webs.com/exif/exif.html
+https://addons.mozilla.org/en-GB/firefox/addon/exif-viewer/
+
+
+Firefox Multi-Account Containers 8.1.2
+Multi-Account Containers helps you keep all the parts of your online life contained in different tabs. Custom labels and colour-coded tabs help keep different activities — like online shopping, travel planning, or checking work email — separate.
+https://github.com/mozilla/multi-account-containers#readme
+https://addons.mozilla.org/en-GB/firefox/addon/multi-account-containers/
+
+
+HNTP 1.24.2
+Redesigned new tab page featuring your bookmarks, apps, most visited, and recently closed in a custom layout.
+https://github.com/ibillingsley/HumbleNewTabPage
+https://addons.mozilla.org/en-GB/firefox/addon/humble-new-tab/
+
+
+Image Max URL 0.19.5
+Finds larger or original versions of images
+https://qsniyg.github.io/maxurl/
+https://addons.mozilla.org/en-GB/firefox/addon/image-max-url/
+
+
+KeePassXC-Browser 1.8.4
+KeePassXC integration for modern web browsers
+https://keepassxc.org/
+https://addons.mozilla.org/en-GB/firefox/addon/keepassxc-browser/
+
+
+Open bookmark in Container Tab menu item 1.3
+Add 'Open in Container Tab' menu item to bookmarks
+https://github.com/Rob--W/bookmark-container-tab
+https://addons.mozilla.org/en-GB/firefox/addon/open-bookmark-in-container-tab/
+
+
+Popup window 0.1.0
+Move tab to standalone window, without tabs bar, navigation bar and bookmark bar UI.
+https://github.com/ettoolong/PopupWindow
+https://addons.mozilla.org/en-GB/firefox/addon/popup-window/
+
+
+Proxy SwitchyOmega 2.5.20
+Manage and switch between multiple proxies quickly & easily.
+https://github.com/FelisCatus/SwitchyOmega
+https://addons.mozilla.org/en-GB/firefox/addon/switchyomega/
+
+
+QR Code 1.3
+Adds a button to the address bar to get the current url as a qr code
+
+
+Random User-Agent (Switcher) 3.16.1
+Automatically change the user agent after specified period of time to a randomly selected one, thus hiding your real user agent
+https://github.com/tarampampam/random-user-agent
+https://addons.mozilla.org/en-GB/firefox/addon/random_user_agent/
+
+
+Redacted 1.0.2
+Redact text on a page before taking a screenshot of it.
+https://fourtonfish.com/project/redacted-js/
+https://addons.mozilla.org/en-GB/firefox/addon/redacted-browser-extension/
+
+
+Reverse Image Search 3.4.1
+Adds an option to the context menu to reverse search an image on various services
+https://github.com/Brawl345/Image-Reverse-Search-with-Google
+https://addons.mozilla.org/en-GB/firefox/addon/image-reverse-search/
+
+
+Sidebery 4.10.2
+Addon for managing tabs, containers (contextual identities) and bookmarks in sidebar. Supports both flat and tree tabs layouts, per-container include/exclude rules, proxy configs for each container and much more.
+https://github.com/mbnuqw/sidebery
+https://addons.mozilla.org/en-GB/firefox/addon/sidebery/
+
+
+Switch Container 0.8
+Allows to switch the current tab to a different container.
+https://gitlab.com/mjanetmars/switch-container
+https://addons.mozilla.org/en-GB/firefox/addon/switch-container/
+
+
+Tab Session Manager 6.12.1
+Save and restore the state of windows and tabs. It also supports automatic saving.
+https://tab-session-manager.sienori.com/
+https://addons.mozilla.org/en-GB/firefox/addon/tab-session-manager/
+
+
+To Google Translate 4.2.0
+Highlight text on a web page and send it to Google Translate or listen the pronunciation
+https://github.com/itsecurityco/to-google-translate
+https://addons.mozilla.org/en-GB/firefox/addon/to-google-translate/
+
+
+uBlock Origin 1.46.0
+Finally, an efficient blocker. Easy on CPU and memory.
+https://github.com/gorhill/uBlock#ublock-origin
+https://addons.mozilla.org/en-GB/firefox/addon/ublock-origin/
+
+
+uMatrix 1.4.4
+Point & click to forbid/allow any class of requests made by your browser. Use it to block scripts, iframes, ads, facebook, etc.
+https://github.com/gorhill/uMatrix
+https://addons.mozilla.org/en-GB/firefox/addon/umatrix/
+
+
+Visual Hashing 1.1
+Changes the background of password entry fields to a four-color visual hash.
+
+
+Web Archives 4.0.0
+View archived and cached versions of web pages on 10+ search engines, such as the Wayback Machine, Archive․is, Google, Bing and Yandex
+https://github.com/dessant/web-archives
+https://addons.mozilla.org/en-GB/firefox/addon/view-page-archive/

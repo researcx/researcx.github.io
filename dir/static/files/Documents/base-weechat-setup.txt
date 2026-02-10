@@ -1,0 +1,102 @@
+##  This is the basics on how to install weechat and (optionally) weechat-matrix and/or bitlbee on Arch Linux
+
+# This does not explain how to set up anything beyond that!
+# Refer to https://gist.github.com/unendingPattern/26558dfbfd9417157f20b7c236f28f05 (weechat)
+# and https://www.bitlbee.org/user-guide.html#quickstart (bitlbee)
+# and https://github.com/poljar/weechat-matrix#configuration (weechat-matrix)
+# for further information.
+
+##  Not using Arch Linux on your main system? Running a server with LXD containers?
+# Create and launch a shell into an Arch Linux LXD container:
+# lxc launch images:archlinux/current my-weechat
+# lxc exec my-weechat /bin/bash
+
+su <user>
+
+sudo pacman -S tmux openssh # if you intend to keep weechat running in a terminal which you can ssh into
+sudo systemctl enable sshd
+sudo systemctl start sshd
+
+
+# install yay (Yet another Yogurt) (https://github.com/Jguer/yay - An AUR Helper written in Go)
+git clone https://aur.archlinux.org/yay.git
+cd yay
+makepkg -si
+
+# if installing yay fails:
+sudo pacman -Sy base-devel --needed
+sudo pacman -S fakeroot
+
+echo 'en_US.UTF-8 UTF-8' | sudo tee -a /etc/locale.gen
+sudo locale-gen
+
+
+# install weechat
+sudo pacman -S tcl ruby python aspell # tcl, ruby, python scripting support for weechat
+yay -S weechat-git
+
+# set weechat to automatically start on boot
+sudo pacman -S cronie
+crontab -e
+# add the following line:
+@reboot /usr/sbin/runuser -l <user> -c '/usr/bin/tmux -2 -u new-session -d -s weechat /usr/bin/weechat'
+
+# accessing weechat:
+# first use:
+tmux
+weechat
+
+# after detaching or after a reboot:
+tmux attach
+
+
+# OPTIONAL:
+# install poljar's weechat-matrix:
+yay -S weechat-poljar-matrix-git
+
+ln -s /usr/lib/weechat/python/matrix.py ~/.weechat/python/autoload/
+ln -s /usr/lib/weechat/python/matrix.py ~/.weechat/python/
+ln -s /usr/lib/weechat/python/matrix/   ~/.weechat/python/
+
+# OPTIONAL:
+# install Python OTR if you intend to use the OTR plugin for weechat (https://weechat.org/scripts/source/otr.py.html/)
+yay -S python-potr
+
+
+# OPTIONAL:
+# Intall bitlbee (https://www.bitlbee.org/)
+# "BitlBee brings instant messaging to IRC clients."
+# https://aur.archlinux.org/packages/?K=bitlbee
+
+# yay -S bitlbee-libpurple-unicode-channel
+# patched for unicode channel names, if you don't care about this
+# install bitlbee-libpurple or bitlbee-libpurple-git
+
+# Supported protocols: https://wiki.bitlbee.org/
+#
+# Bitlbee protocol plugins:
+#
+# Mastodon:
+yay -S bitlbee-mastodon-git
+
+# Steam:
+yay -S bitlbee-steam-git
+
+# Facebook:
+yay -S bitlbee-facebook-git
+
+# Discord:
+yay -S bitlbee-discord-git
+
+# libpurple protocols for Bitlbee:
+# https://aur.archlinux.org/packages/?K=purple
+# (not all are compatible, see https://wiki.bitlbee.org/)
+
+# Google Hangouts:
+yay -S purple-hangouts-hg
+
+# Skype (with skypeweb)
+yay -S purple-skypeweb-git
+
+## restarting the bitlbee service after installing new protocols will be necessary
+sudo systemctl restart bitlbee

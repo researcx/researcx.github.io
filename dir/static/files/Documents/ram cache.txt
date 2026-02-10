@@ -1,0 +1,7 @@
+```
+[root@localhost ~]$ echo 'tmpfs /tmp tmpfs rw,nodev,nosuid,size=512M 0 0' >> /etc/fstab
+[root@localhost ~]$ cat /etc/profile.d/xdg_cache_home.sh 
+if [ $USER ]; then
+  export XDG_CACHE_HOME="/tmp/${USER}/.cache"
+fi
+```

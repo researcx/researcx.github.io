@@ -1,0 +1,9 @@
+# sudo cp --preserve /etc/ssh/sshd_config /etc/ssh/sshd_config.$(date +"%Y%m%d%H%M%S")
+# sudo sed -i -r -e '/^#|^$/ d' /etc/ssh/sshd_config
+
+# PUT CONFIG IN HERE
+
+# sudo cp --preserve /etc/ssh/moduli /etc/ssh/moduli.$(date +"%Y%m%d%H%M%S")
+
+# sudo awk '$5 >= 3071' /etc/ssh/moduli | sudo tee /etc/ssh/moduli.tmp
+# sudo mv /etc/ssh/moduli.tmp /etc/ssh/moduli

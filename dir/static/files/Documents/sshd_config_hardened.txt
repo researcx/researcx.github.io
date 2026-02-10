@@ -1,0 +1,47 @@
+ListenAddress 0.0.0.0
+Port 22
+Protocol 2
+
+AddressFamily any
+AllowUsers tomeno kei
+
+UsePAM yes
+PrintMotd yes
+AcceptEnv LANG LC_*
+
+LogLevel VERBOSE
+UsePrivilegeSeparation sandbox
+
+ClientAliveCountMax 0
+ClientAliveInterval 300
+LoginGraceTime 30
+MaxAuthTries 2
+MaxSessions 2
+MaxStartups 2
+
+ChallengeResponseAuthentication no
+PasswordAuthentication yes
+PermitRootLogin no
+PermitUserEnvironment no
+PermitTunnel no
+PermitEmptyPasswords no
+
+X11Forwarding no
+AllowTcpForwarding no
+AllowStreamLocalForwarding no
+GatewayPorts no
+IgnoreRhosts yes
+UseDNS no
+Compression no
+TCPKeepAlive no
+AllowAgentForwarding no
+HostbasedAuthentication no
+
+Subsystem sftp  internal-sftp -f AUTHPRIV -l INFO
+
+HostKey /etc/ssh/ssh_host_ed25519_key
+HostKey /etc/ssh/ssh_host_rsa_key
+HostKey /etc/ssh/ssh_host_ecdsa_key
+KexAlgorithms curve25519-sha256@libssh.org,ecdh-sha2-nistp521,ecdh-sha2-nistp384,ecdh-sha2-nistp256,diffie-hellman-group-exchange-sha256
+Ciphers chacha20-poly1305@openssh.com,aes256-gcm@openssh.com,aes128-gcm@openssh.com,aes256-ctr,aes192-ctr,aes128-ctr
+MACs hmac-sha2-512-etm@openssh.com,hmac-sha2-256-etm@openssh.com,umac-128-etm@openssh.com,hmac-sha2-512,hmac-sha2-256,umac-128@openssh.com

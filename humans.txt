@@ -1,0 +1,10 @@
+/* TEAM */
+Designed and written by researcx
+Contact: https://linktr.ee/researcx
+
+/* THANKS */
+You, the viewer.
+
+/* SITE */
+Standards: HTML, CSS, JS.
+Software: text editor, photoshop

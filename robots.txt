@@ -1,0 +1,27 @@
+User-agent: *
+Disallow: /dir/
+
+User-Agent: Adsbot
+Disallow: /
+Allow: /ads.txt
+Allow: /app-ads.txt
+
+User-Agent: TurnitinBot
+Disallow: /
+
+User-Agent: BLEXBot
+Disallow: /
+
+User-Agent: SlySearch
+Disallow: /
+
+User-agent: BrandVerity/1.0
+Disallow: /
+
+User-agent: CheckMarkNetwork/1.0 (+https://www.checkmarknetwork.com/spider.html)
+Disallow: /
+
+User-Agent: NPBot
+Disallow: /
+
+Sitemap: /sitemap.xml

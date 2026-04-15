@@ -1,0 +1,12 @@
+Step 1: have a rail already built
+Step 2: Check alignment of the rail - put down a reactor and a seat on the rail, see the "artificial horizon" view to check angles (roll and pitch) of the rail
+To adjust for planets curvature, I use two (three) things:1) Prefabs of slope-up, slope-down to adjust the slope in like 0.5 deg increments
+2) Put a rotor on the end of the rail, then put a rail after it, add a seat on it. Adjust the rotors velocity with left-right arrow keys (right-click on the velocity slider to reset it & make it active so you can left-right arrow giving it very small velocity to adjust angles very precisely) to make roll 0 again
+3) When I need a very fine slope/make it perfectly level, do same, except adjust rotors on the slope-up or slope-down prefab
+Just gotta remember to turn the whole thing from a ship to a station once you're done aligning - before you remove any rotors and other temporary connections
+Basically use a control seat to check angles
+So left-right leaning rails are made uniquely each time, but slope up and slope down are usually prefabs
+When using the horizon, don't look at the horizon line
+Instead look at how the grid aligns with the edges of the screen
+It's much more precise when you match up all dots to be aligned with the screen edges
+You can make tracks always perfectly aligned with the planets curvature this way

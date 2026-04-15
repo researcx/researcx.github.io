@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <noscript>
+        <style>.container{display:none;} .nojs{display:block !important;}</style>
+        <meta http-equiv="refresh" content="0; url=https://k-payment.carrd.co">
+      </noscript>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support Me</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Helvetica, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: white;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        .nojs{
+            display: none;
+        }
+        .container {
+            background: white;
+            max-width: 600px;
+            width: 100%;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 10px;
+            font-size: 2em;
+        }
+        .subtitle,
+        .breadcrumb {
+            text-align: center;
+            color: #666;
+            margin-bottom: 20px;
+        }
+        .breadcrumb {
+            font-size: 0.9em;
+        }
+        .step {
+            display: none;
+        }
+        .step.active {
+            display: block;
+        }
+        .button-group {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        button,
+        .link-btn {
+            padding: 18px 30px;
+            font-size: 1.1em;
+            border: 1px solid #f38f14;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            font-weight: 600;
+            background: #f7931a;
+            color: #333;
+            text-decoration: none;
+            display: block;
+            text-align: center;
+        }
+        button:hover,
+        .link-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+        .back-btn {
+            margin-top: 20px;
+        }
+        .icon {
+            margin-right: 8px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nojs">
+        <p>Redirecting to <a href="https://k-payment.carrd.co/">https://k-payment.carrd.co/</a> ...</p>
+    </div>
+    <div class="container">
+        <h1>Support Me</h1>
+        <p class="subtitle">Choose your preferred donation method</p>
+        <div class="breadcrumb" id="breadcrumb"></div>
+
+        <div class="step active" id="step1">
+            <div class="button-group">
+                <button onclick="selectType('fiat')">
+                    Fiat
+                </button>
+                <button onclick="selectType('crypto')">
+                    Cryptocurrency
+                </button>
+                <button onclick="selectType('gift')">
+                    Physical Gift
+                </button>
+                <button onclick="selectType('giftcard')">
+                    Gift Card
+                </button>
+            </div>
+        </div>
+
+        <div class="step" id="step2-fiat">
+            <div class="button-group">
+                <button onclick="selectFiatMethod('paypal')">
+                    PayPal
+                </button>
+                <button onclick="selectFiatMethod('card')">
+                    Debit/Credit Card
+                </button>
+            </div>
+            <button class="back-btn" onclick="goBack()">← Back</button>
+        </div>
+
+        <div class="step" id="step2-crypto">
+            <div class="button-group">
+                <button onclick="selectCryptoMethod('service')">
+                    Payment Service
+                </button>
+                <button onclick="selectCryptoMethod('wallet')">
+                    Direct Wallet Transfer
+                </button>
+            </div>
+            <button class="back-btn" onclick="goBack()">← Back</button>
+        </div>
+
+        <div class="step" id="step2-gift">
+            <p class="subtitle">Send a physical gift</p>
+            <div class="button-group">
+                <a href="https://www.amazon.co.uk/hz/wishlist/ls/1EQIL6667OF2A" class="link-btn" target="_blank">
+                    Amazon Wishlist
+                </a>
+                <a href="https://sockdreams.com/apps/iwish?share=7395217080615" class="link-btn" target="_blank">
+                    Sock Dreams Wishlist
+                </a>
+                <a href="https://throne.com/researcx" class="link-btn" target="_blank">
+                    Throne Wishlist
+                </a>
+                <a href="https://throne.com/researcx/surprise" class="link-btn" target="_blank">
+                    Throne Surprise Gift
+                </a>
+            </div>
+            <button class="back-btn" onclick="goBack()">← Back</button>
+        </div>
+
+        <div class="step" id="step2-giftcard">
+            <p class="subtitle">Purchase a gift card from one of these retailers</p>
+            <div class="button-group">
+                <a href="https://www.amazon.co.uk/hz/wishlist/ls/O5MLHQNOOWYX" class="link-btn" target="_blank">
+                    Amazon Gift Card
+                </a>
+                <a href="https://sockdreams.com/products/gift-card?variant=44952355143975" class="link-btn" target="_blank">
+                    Sock Dreams Gift Card
+                </a>
+                <a href="https://www.cardyard.co.uk/buy" class="link-btn" target="_blank">
+                    Gift Card fom Card Yard
+                </a>
+                <a href="https://linktr.ee/researcx" class="link-btn" target="_blank">
+                    Other Gift Card
+                </a>
+                <br/>
+                <a href="https://linktr.ee/researcx" class="link-btn" target="_blank">
+                    Send Gift Card Code
+                </a>
+            </div>
+            <button class="back-btn" onclick="goBack()">← Back</button>
+        </div>
+
+        <div class="step" id="final-paypal">
+            <p class="subtitle">Support me via PayPal</p>
+            <div class="button-group">
+                <a href="https://ko-fi.com/J3J47M0QD" class="link-btn" target="_blank">
+                    Ko-fi
+                </a>
+                <a href="https://liberapay.com/researcx/donate" class="link-btn" target="_blank">
+                    LiberaPay
+                </a>
+            </div>
+            <button class="back-btn" onclick="goBack()">← Back</button>
+        </div>
+
+        <div class="step" id="final-card">
+            <p class="subtitle">Pay securely with your card</p>
+            <div class="button-group">
+                <a href="https://ko-fi.com/J3J47M0QD" class="link-btn" target="_blank">
+                    Ko-fi
+                </a>
+            </div>
+            <button class="back-btn" onclick="goBack()">← Back</button>
+        </div>
+
+        <div class="step" id="final-crypto-service">
+            <p class="subtitle">Use a cryptocurrency payment processor</p>
+            <div class="button-group">
+                <a href="https://nowpayments.io/donation/M4DBM65ADLHVNYIOG7" class="link-btn" target="_blank">
+                    NOWPayments
+                </a>
+                <a href="https://pay.oxapay.com/16007405" class="link-btn" target="_blank">
+                    OxaPay
+                </a>
+            </div>
+            <button class="back-btn" onclick="goBack()">← Back</button>
+        </div>
+
+        <div class="step" id="final-crypto-wallet">
+            <p class="subtitle">Send directly to my wallet</p>
+            <div class="button-group">
+                <a href="https://linktr.ee/researcx" class="link-btn" target="_blank">
+                    Request Wallet Address
+                </a>
+            </div>
+            <button class="back-btn" onclick="goBack()">← Back</button>
+        </div>
+    </div>
+
+    <script>
+        let history = ['step1'];
+
+        function updateBreadcrumb() {
+            document.getElementById('breadcrumb').textContent = `Step ${history.length}`;
+        }
+
+        function showStep(stepId) {
+            document.querySelectorAll('.step').forEach(step => step.classList.remove('active'));
+            document.getElementById(stepId).classList.add('active');
+            updateBreadcrumb();
+        }
+
+        function selectType(type) {
+            history.push(`step2-${type}`);
+            showStep(`step2-${type}`);
+        }
+
+        function selectFiatMethod(method) {
+            history.push(`final-${method}`);
+            showStep(`final-${method}`);
+        }
+
+        function selectCryptoMethod(method) {
+            history.push(`final-crypto-${method}`);
+            showStep(`final-crypto-${method}`);
+        }
+
+        function goBack() {
+            if (history.length > 1) {
+                history.pop();
+                showStep(history[history.length - 1]);
+            }
+        }
+
+        updateBreadcrumb();
+    </script>
+    <script>
+      var _paq = window._paq = window._paq || [];
+      _paq.push(["disableCookies"]);
+      _paq.push(['trackPageView']);
+      _paq.push(['enableLinkTracking']);
+      (function() {
+      var u="//researcx.is-a.dev/_stats/";
+      _paq.push(['setTrackerUrl', u+'vis.php']);
+      _paq.push(['setSiteId', '7']);
+      var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+      g.async=true; g.src=u+'vis.js'; s.parentNode.insertBefore(g,s);
+      })();
+    </script>
+    <noscript><p><img referrerpolicy="no-referrer-when-downgrade" src="//researcx.is-a.dev/_stats/vis.php?view=7&amp;rec=1" style="border:0;" alt="" /></p></noscript>
+    <img referrerpolicy="no-referrer-when-downgrade" src="//researcx.is-a.dev/cache/github/tip/" style="border:0;" alt="" />
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Code</title>
+</head>
+<body>
+<pre>
+    <code class="language-bash" id="bashrc_config">
+        import json, shlex, sys
+        from subprocess import Popen
+        
+        # usage: do_social_media_post.py "<message/image>" twitter,mastodon,bluesky,facebook,instagram
+        
+        caption = sys.argv[1]
+        image_caption = ""
+        if len(sys.argv) == 4:
+            image_caption = sys.argv[3]
+        social_media = sys.argv[2].split(',')
+        is_image = False
+        
+        if caption.endswith(('jpg', 'png', 'gif', 'jpeg')):
+            is_image = True
+        
+        for site in social_media:
+            if is_image == False:
+                if site != "instagram":
+                    command = "/opt/homebrew/opt/python@3.9/libexec/bin/python3 /Users/sysadmin/Documents/social_media_bots/"+site+"/posters/"+site+"_text.py " + json.dumps(caption)
+                    print(command)
+                    proc = Popen(shlex.split(command)) #, shell=True)
+                    proc.communicate()
+                else:
+                    print("instagram does not support text posting")
+            else:
+                command = "/opt/homebrew/opt/python@3.9/libexec/bin/python3 /Users/sysadmin/Documents/social_media_bots/"+site+"/posters/"+site+"_image.py " + json.dumps(caption) + " " + json.dumps(image_caption)
+                print(command)
+                proc = Popen(shlex.split(command)) #, shell=True)
+                proc.communicate()
+        
+    </code>
+</pre>
+
+    <!-- highlight.js syntax highlighting -->
+    <link rel="stylesheet" href="highlightjs/styles/obsidian.css">
+    <script src="highlightjs/highlight.min.js"></script>
+    <script src="highlightjs/highlightjs-line-numbers.min.js"></script>
+    <script src="highlightjs/languages/bash.min.js"></script>
+    <script>
+        hljs.highlightAll();
+        hljs.initLineNumbersOnLoad();
+    </script>
+</body>
+</html>
